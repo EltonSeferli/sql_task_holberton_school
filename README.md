@@ -15,7 +15,7 @@ order_items: Acts as an associative table to resolve the Many-to-Many relationsh
 Data Definition Language (DDL)
 The database structures and table constraints are defined using the following standardized SQL script:
 
-SQL
+```SQL
 -- 1. Customers Table
 CREATE TABLE customers (
     id INT AUTO_INCREMENT,
@@ -55,3 +55,4 @@ CREATE TABLE order_items (
     CONSTRAINT fk_items_orders FOREIGN KEY (order_id) REFERENCES orders(id),
     CONSTRAINT fk_items_products FOREIGN KEY (product_id) REFERENCES products(id)
 );
+```
