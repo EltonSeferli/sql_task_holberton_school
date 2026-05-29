@@ -1,0 +1,75 @@
+insert into customers (id, first_name, last_name, email, city) values
+(1, 'ali', 'hasanov', 'ali.hasanov@gmail.com', 'baku'),
+(2, 'nigar', 'mammadova', 'nigar.m@gmail.com', 'baku'),
+(3, 'rashad', 'aliyev', 'rashad.a@gmail.com', 'sumgait'),
+(4, 'leyla', 'huseynova', 'leyla.h@gmail.com', 'ganja'),
+(5, 'orkhan', 'rahimov', 'orkhan.r@gmail.com', 'baku'),
+(6, 'aysel', 'karimova', 'aysel.k@gmail.com', 'shaki'),
+(7, 'elvin', 'ismayilov', 'elvin.i@gmail.com', 'baku'),
+(8, 'samira', 'aliyeva', 'samira.a@gmail.com', 'lankaran'),
+(9, 'tural', 'muradov', 'tural.m@gmail.com', 'ganja'),
+(10, 'gunay', 'safarova', 'gunay.s@gmail.com', 'baku');
+
+
+insert into products (id, prod_name, prod_category, prod_price) values
+(1, 'wireless mouse', 'electronics', 15.0),
+(2, 'mechanical keyboard', 'electronics', 45.0),
+(3, 'usb-c cable', 'electronics', 8.0),
+(4, 'laptop stand', 'electronics', 25.0),
+(5, 'monitor 24 inch', 'electronics', 120.0),
+(6, 'notebook a5', 'stationery', 3.0),
+(7, 'ballpoint pen', 'stationery', 1.5),
+(8, 'backpack', 'accessories', 35.0),
+(9, 'water bottle', 'accessories', 12.0),
+(10, 'desk lamp', 'home', 20.0),
+(11, 'headphones', 'electronics', 60.0),
+(12, 'phone charger', 'electronics', 18.0);
+
+
+insert into orders (id, customer_id, order_date) values
+(1, 1, '2026-05-01'),
+(2, 2, '2026-05-01'),
+(3, 3, '2026-05-02'),
+(4, 4, '2026-05-02'),
+(5, 5, '2026-05-03'),
+(6, 6, '2026-05-03'),
+(7, 7, '2026-05-04'),
+(8, 8, '2026-05-04'),
+(9, 9, '2026-05-05'),
+(10, 10, '2026-05-05'),
+(11, 1, '2026-05-06'),
+(12, 2, '2026-05-06'),
+(13, 3, '2026-05-07'),
+(14, 4, '2026-05-07'),
+(15, 5, '2026-05-08'),
+(16, 6, '2026-05-08'),
+(17, 7, '2026-05-09'),
+(18, 8, '2026-05-09');
+
+
+insert into order_items (id, order_id, product_id, quantity) values
+(1, 1, 2, 1),
+(2, 1, 7, 2),
+(3, 2, 8, 1),
+(4, 3, 1, 2),
+(5, 3, 3, 1),
+(6, 4, 6, 3),
+(7, 5, 3, 2),
+(8, 5, 9, 1),
+(9, 6, 9, 1),
+(10, 7, 4, 1),
+(11, 7, 1, 1),
+(12, 8, 11, 1),
+(13, 9, 5, 1),
+(14, 10, 12, 2),
+(15, 10, 7, 3),
+(16, 11, 7, 5),
+(17, 12, 10, 1),
+(18, 13, 2, 1),
+(19, 13, 3, 2),
+(20, 14, 8, 2),
+(21, 15, 6, 4),
+(22, 15, 9, 2),
+(23, 16, 1, 1),
+(24, 17, 3, 3),
+(25, 18, 9, 2);
